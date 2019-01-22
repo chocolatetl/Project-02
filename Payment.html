@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,
+    700,700i,800,800i" rel="stylesheet">
+    <script type="text/JavaScript" src = "js/jquery-3.3.1.min.js"></script>
+    <script type="text/JavaScript" src="js/myJS.js"></script>
+   
+    <title>Payment</title>
+</head>
+<body>
+    <div class="super_container">
+
+        <!--Navigation Bar-->
+
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <div class="container">
+                <div class="nav_logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <ul class="nav_link_list ml-auto">
+                    <li>
+                        <a class="nav_list_item" href="#">Sản phẩm</a>
+                    </li>
+
+                    <li>
+                        <a class="nav_list_item" href="#">Tuyển dụng</a>
+                    </li>
+
+                    <li>
+                        <a class="nav_list_item" href="#">Liên hệ</a>
+                    </li>
+
+                    <li>
+                        <a class="nav_list_item" href="#">Giới thiệu</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+
+        <!--Header-->
+        <div class="container-fluid">
+           
+            <!--Baner-->
+            <div class="row">    
+                <div class="banner"></div>
+            </div>
+
+            <div class="row">
+                <div class="alert alert-success path">
+                    <div class="path_link">
+                        <a href="#" >Trang chủ</a> > 
+                        <a href="#" >Tour ở Hà Nội</a> > 
+                        <a href="#" >Tour truyền thống</a> > 
+                        <a href="#" >Tour Khám Phá </a> > 
+                        <a href="#" >Thông tin hành khách</a>
+                    </div>
+                </div>
+            </div> <!--End Row-->
+
+        </div> <!--End Header-->
+
+        <!---Body-->
+        <div class="container main_body">
+            <div class="row">
+                <div class="col-md-9">
+
+                    <!--Thông tin hành khách-->
+                    <div class="row">
+                        <div class="info_hanh_khach">
+                            <div class="info_tieu_de">
+                                <h3>Thông tin hành khách</h3>
+                            </div>
+                        <div class="box_info">
+                            <div class="row">
+                                <div class="group_icon">
+                                    <br>
+                                    <img src="img/business.png" alt="" ><br>
+                                    <img src="img/woman.png" alt="" ><br>
+                                    <img src="img/girl.png" alt="" ><br>
+                                    <img src="img/crawling.png" alt="" ><br>
+                                </div>
+                                <div class="group">
+                                    <strong>Họ tên</strong>
+                                    <p>Trần Nguyên Đạt</p>
+                                    <p>Nguyễn Thị Thu Hoa</p>
+                                    <p>Trần Hoa Duyên</p>
+                                    <p>Trần Quốc Huy</p>
+                                </div>
+                                <div class="group">
+                                    <strong>Ngày sinh</strong>
+                                    <p>22/09/1986</p>
+                                    <p>12/11/1959</p>
+                                    <p>22/12/2005</p>
+                                    <p>07/04/2017</p>
+                                </div>
+                                <div class="group">
+                                    <strong>Quốc tịch</strong>
+                                    <p>Việt Nam</p>
+                                    <p>Việt Nam</p>
+                                    <p>Việt Nam</p>
+                                    <p>Việt Nam</p>
+                                </div>
+                                <div class="group">
+                                    <strong>Số hộ chiếu</strong>
+                                    <p>C5657465</p>
+                                    <p>C1545782</p>
+                                    <p>H5682584</p>
+                                    <p>S8435682</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div> <!--End Thông tin hành khách-->
+
+                    <!--Thông tin thanh toán-->
+                    <div class="row">
+                        <div class="info_payment">
+                            <div class="info_tieu_de" style="margin-top:70px; margin-bottom: 20px">
+                                <h3>Thông tin thanh toán</h3>
+                                <h6>Chọn phương thức thanh toán và hoàn tất thanh toán</h6>
+                            </div>
+                            <div class="box_payment">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn_payment">Thẻ tín dụng</button>
+                                    <button type="button" class="btn btn_payment">MasterCard</button>
+                                    <button type="button" class="btn btn_payment">Chuyển khoản</button>
+                                </div>
+                                <div class="the_tin_dung">
+                                    <div class="logo_visa">
+
+                                    </div>
+                                    <div class="form_item">
+                                        Họ và tên 
+                                        <span id = "errorName"></span><br>
+                                        <input type="name"  class="form_payment" id = "name"> 
+                                    </div>
+                                    <div class="form_item">
+                                        Số thẻ
+                                        <span id = "errorSothe"></span><br>
+                                        <input type="sothe" class="form_payment" id = "sothe">
+                                    </div>
+                                    <div class="row">
+                                        <div class="form_item_2">
+                                            Ngày hết hạn<br>
+                                            <input type="date" class="form_payment_2" id = "date"><br>
+                                            <span id = "errorDate"></span>
+                                        </div>
+                                        <div class="form_item_2">
+                                            CCG
+                                            <br>
+                                            <input type="ccg" class="form_payment_2" id = "ccg"><br>
+                                            <span id = "errorCcg"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End Thông tin thanh toán-->
+
+                <!--Terms and Conditions-->
+                    <div class="terms_container">
+                        <div class="terms_conditions">
+                            <div class="tc">
+                                <p>
+                                    Điều khoản: <br>
+                                    <hr>
+                                    - Khi đăng ký tour Quý khách vui lòng mang theo CMND/Passport bản chính hoặc cung cấp tên chính xác đầy đủ,
+                                    đúng từng ký tự trên CMND/ Passport (Hộ chiếu)/Giấy khai sinh (trẻ em dưới 14 tuổi) theo thứ tự: Họ/tên lót/tên.
+                                    Quý khách khi đăng ký cung cấp tên theo giấy tờ tùy thân nào, khi đi tour phải mang theo giấy tờ tùy thân đó theo 
+                                    quy định hãng hàng không<br>
+                                    - Quy định giấy tờ tùy thân khi đi tour: Đối với Khách Quốc tịch Việt Nam: Khi đi tour Trẻ em từ 14 tuổi 
+                                    trở lên và người lớn cần đem theo CMND/Passport (Hộ chiếu) bản chính còn hạn sử dụng, hình ảnh rõ (CMND có thời 
+                                    hạn sử dụng không quá 15 năm, tính từ ngày cấp, hình ảnh rõ)/ Giấy khai sinh bản chính (trẻ em dưới 14 tuổi), 
+                                    trẻ em trên 14 tuổi bắt buộc phải có CMND hoặc Passport làm thủ tục lên máy bay. Đối với khách Nước ngoài/Việt Kiều: 
+                                    Khi đi tour phải mang theo đầy đủ Passport (Hộ Chiếu) bản chính còn hạn sử dụng hoặc thẻ xanh kèm theo Visa và giấy 
+                                    tái xuất nhập Việt Nam, làm thủ tục lên máy bay theo qui định hàng không.<br>
+                                    - Trong trường hợp Quý khách cung cấp tên sai, đến trễ giờ bay, vui lòng chịu phí đổi vé hoặc mua lại vé mới theo 
+                                    quy định của Hãng Hàng Không (nếu chuyến bay còn chỗ).<br>
+                                    - Trong trường hợp Quý khách bay hãng hàng không Vietjet và Jetstar, vé không hoàn, không dời, đổi, huỷ, sai tên 
+                                    mất 100% theo qui định hãng hàng không. Giá vé máy bay trẻ em bằng 100% người lớn. <br>
+                                    - Do các chuyến bay phụ thuộc vào các hãng Hàng Không (Vietnam Airlines, Vietjet, Jetstar,..) nên trong một số 
+                                    trường hợp giá vé, chuyến bay, giờ bay có thể thay đổi mà không được báo trước. Tùy vào tình hình thực tế, 
+                                    Chương trình và điểm tham quan có thể linh động thay đổi thứ tự các điểm phù hợp điều kiện giờ bay và thời tiết 
+                                    thực tế. Sun Travel sẽ không chịu trách nhiệm bảo đảm các điểm tham quan trong trường hợp:<br>
+                                    + Xảy ra thiên tai: bão lụt, hạn hán, động đất… <br>
+                                    + Sự cố về an ninh: khủng bố, biểu tình<br>
+                                    + Sự cố về hàng không: trục trặc kỹ thuật, an ninh, dời, hủy, hoãn chuyến bay.<br> 
+                                </p>
+                            </div>
+                            <br>
+                            <form action="#">
+                                <input type="checkbox" name="check" value="on">Tôi đồng ý với các điều khoản trên<br>
+                                <input type="checkbox" name="check" value="on">Tôi đồng ý với các điều khoản về luật và thuế khi thanh toán trực tuyến
+                            </form>
+                        </div>
+                        <button type="button" class="btn btn-warning thanhtoan" onclick="checkInfo()"><b>THANH TOÁN</b></button>
+                    </div> <!--End Terms and Conditions-->
+                </div> <!--End col-md-9-->
+
+
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="de_xuat_lu_lich">
+                            <h6 style="margin: 5px; color: #ffffff">Tham quan vịnh Hạ Long và các điểm gần kề</h6>
+                            <div class="row">
+                                <div class="giam_gia">
+                                    <br>
+                                    <strong>-45%</strong>
+                                </div>
+                                <p style="color: #ffffff;"> 
+                                    - Đặt vé gia đình<br>
+                                    - Trả tiền trước<br>
+                                    <strong>530000đ/người</strong> 
+                                </p>
+                                <button type="button" class="btn chi_tiet">Chi tiết</button>
+                            </div>
+                        </div> 
+                    </div> <!--End row-->
+
+                    <div class="row" style="margin-top:15px;">
+                        <div class="title_chuyen_bay">
+                            <h5>Chuyến bay</h5>
+                            <p>Chuyến bay đi</p>
+                        </div>
+                        <div class="row chuyen_bay">
+                            <div class="logo_vnairline">
+                                <img src="img/vnairline.png" alt="" style="margin-top:15px"><br>
+                                VN340
+                            </div>
+                            <div class="han">
+                                <h3 style="margin-top: 10px;margin-bottom: unset">HAN</h3>
+                                11:30
+                            </div>
+                            <div class="flight">
+                                3h50m<br>
+                                <img src="img/flight.png" alt=""><br>
+                                1 stop
+                            </div>
+                            <div class="han">
+                                <h3 style="margin-top: 10px;margin-bottom: unset">SGN</h3>
+                                16:20
+                            </div>
+                        </div>
+                    </div> <!--End Row-->
+
+                    <div class="row">
+                        <p class="mo_ta">
+                            - VietNam Airline, VN340, Phổ thông<br>
+                            - Bay từ Hà Nội tới TP Hồ Chí Minh<br>
+                            - Nối chuyến bay tại Đà Nẵng<br>
+                            - Hành lý xách tay 7kg
+                        </p>
+                    </div> <!--End Row-->
+
+
+                    <div class="row" style="margin-top:15px;">
+                        <div class="title_chuyen_bay">
+                            <p>Chuyến bay về</p>
+                        </div>
+                        <div class="row chuyen_bay">
+                            <div class="logo_vnairline">
+                                <img src="img/vnairline.png" alt="" style="margin-top:15px"><br>
+                                    VN340
+                            </div>
+                            <div class="han">
+                                <h3 style="margin-top: 10px;margin-bottom: unset">SGN</h3>
+                                09:15
+                            </div>
+                            <div class="flight">
+                                3h20m<br>
+                                <img src="img/flight.png" alt=""><br>
+                                nonstop
+                            </div>
+                            <div class="han">
+                                <h3 style="margin-top: 10px;margin-bottom: unset">HAN</h3>
+                                12:35
+                            </div>
+                        </div>
+                    </div> <!--End Row-->
+                    
+                    <hr class="duong_ke"> 
+
+                    <div class="row">
+                        <div class="layer631" style="margin-top:5px">
+                            <img src="img/layer631.png" alt="">
+                        </div>
+                        <div class="tour_select">
+                            <strong>Tham quan Cầu Ngọc Sơn<br>
+                            Tam Đảo, Cát Bà, Hạ Long
+                            </strong>
+                            <div class="day_age">
+                                <img src="img/layer630.png" alt="">
+                                6 ngày 5 đêm
+                            </div>
+                            <div class="day_age">
+                                <img src="img/layer632.png" alt="">
+                                18 - 39 tuổi
+                            </div>
+                            <div class="day_age">
+                                <a href="#" style="font-size: 11px">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div> <!--End Row-->
+
+                    <hr class="duong_ke"> 
+
+                    <div class="row">
+                        <div class="total_price">
+                            <h3 class="price">12,350,000đ</h3>
+                            <a href="#">Xem chi tiết giá & phí</a>
+                            <div class="total_price_1">
+                                <img src="img/tick_16.png" alt="">
+                                Giá đã bao gồm thuế & phí
+                            </div>
+                            <div class="total_price_2">
+                                <img src="img/tick_16.png" alt="">
+                                Giá tốt nhất cho gia đình
+                            </div>
+                        </div>
+                    </div> <!--End Row-->
+
+                    <hr class="duong_ke"> 
+
+                    <div class="row">
+                        <div class="detail_price">
+                            Vé máy bay (2người lớn)<br>
+                            Tour<br>
+                            Thuế và phí<br>
+                            Giảm giá (TCD700)
+                        </div>
+                        <div class="detail_price_M"><strong>
+                            7,800,000đ<br>
+                            4,500,000đ<br>
+                            750,000đ<br>
+                            <p>-700,000đ<p>
+                            </strong>
+                        </div>
+                    </div> <!--End Row-->
+
+                    <hr class="duong_ke"> 
+
+                    <div class="row">
+                        Mã giảm giá
+                        <form class="form-inline">
+                            <input type="code" class="form-control code_giam_gia" id="code">
+                            <button type="button" class="btn btn-success" onclick="checkCode()">Áp dụng</button>
+                            <span id ="errorCode"></span>
+                        </form>
+                        <div class="form-check check_Tpoint">
+                            <label class="form-check-lable ">
+                                <input class="form-check-input" type="checkbox">
+                                <p style="font-size: 14px">Dùng <b>450TPoint</b> cho lần thanh toán này</p>
+                            </label>
+                        </div>
+                    </div> <!--End Row-->
+
+                    <hr class="duong_ke"> 
+
+                    <div class="row">
+                        <div class="profit">
+                            <img src="img/tick_16.png" alt="">
+                            Không phụ thu thẻ thanh toán quốc tế
+                        </div>
+                        <div class="profit">
+                            <img src="img/tick_16.png" alt="">
+                            Đảm báo giá luôn tốt nhất
+                        </div>
+                        <div class="profit">
+                            <img src="img/tick_16.png" alt="">
+                            Nhận được 200 Tpoint cho lần đặt sau
+                        </div>
+                    </div> <!--End Row-->
+
+                    <hr class="duong_ke"> 
+
+                    <div class="row">
+                        <a href="#" class="guide_link">Điều khoản sử dụng - Hướng dẫn thanh toán</a>
+                    </div>
+
+                    <hr class="duong_ke"> 
+
+
+                </div>
+            </div>
+        </div> <!--End Main Body-->
+
+        <!--Footer-->
+
+
+        <div class="container-fluid footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col_1">
+                        <div class="logo_footer">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <p>
+                            - TaChuDu cung cấp giải pháp đặt vé máy bay, đặt tour
+                            chất lượng cao, đảm bảo uy tín 100%.<br>
+                            - Rất nhiều đánh giá tích cực từ khách hàng về chúng tôi.<br>
+                            - Chúng tôi càng ngày càng nỗ lực và cố gắng để đưa đến cho
+                            khách hàng nhiều lựa chọn tốt nhất
+                        </p>
+                        <div class="media_link">
+                            <img src="img/media_footer.png" alt="">
+                        </div>
+                    </div> <!--End col-->
+
+
+                    <div class="col-sm-3">
+                        <div class="title_col_footer">
+                            <strong>Khách sạn phổ biến</strong>
+                        </div>
+                        <div class="row">
+                            <div class="logo_hotel">
+                                <img src="img/grand-hotel.png" alt="">
+                            </div>
+                            <div class="detail_hotel">
+                                <strong>Grand Hotel</strong><br>
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <br>
+                                Chỉ từ <strong style="color: #f7941d">450,000đ</strong><br>
+                                <img src="img/flags.png" alt="">
+                                Hoàn Kiếm, Hà Nội
+                            </div>
+                        </div>
+
+                        
+                        <div class="row">
+                            <div class="logo_hotel">
+                                <img src="img/grand-hotel.png" alt="">
+                            </div>
+                            <div class="detail_hotel">
+                                <strong>Grand Hotel</strong><br>
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <br>
+                                Chỉ từ <strong style="color: #f7941d">450,000đ</strong><br>
+                                <img src="img/flags.png" alt="">
+                                Hoàn Kiếm, Hà Nội
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="logo_hotel">
+                                <img src="img/grand-hotel.png" alt="">
+                            </div>
+                            <div class="detail_hotel">
+                                <strong>Grand Hotel</strong><br>
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <br>
+                                Chỉ từ <strong style="color: #f7941d">450,000đ</strong><br>
+                                <img src="img/flags.png" alt="">
+                                Hoàn Kiếm, Hà Nội
+                            </div>
+                        </div>                
+                    </div> <!--End col-->
+
+
+                    <div class="col-sm-3">
+                        <div class="title_col_footer">
+                            <strong>Thẻ</strong>
+                        </div>
+                        <a href="#" class="tag_footer">Hà Nội</a>
+                        <a href="#" class="tag_footer">Hoàn Kiếm</a>
+                        <br><br>
+                        <a href="#" class="tag_footer">Đà Nẵng</a>
+                        <a href="#" class="tag_footer">Đà Lạt</a>
+                        <br><br>
+                        <a href="#" class="tag_footer">Vịnh Hạ Long</a>
+                        <a href="#" class="tag_footer">Cát Bà</a>
+                        <br><br>
+                        <a href="#" class="tag_footer">Sài Gòn</a>
+                        <a href="#" class="tag_footer">Mũi Né</a>
+                    </div> <!--End col-->
+
+
+                    <div class="col-sm-3">
+                        <div class="title_col_footer">
+                            <strong>Liên hệ</strong>
+                        </div>   
+                        <div class="row row_footer">
+                            <div class="icon_footer">
+                                    <img src="img/place-holder.png" alt="" class="icon_footer">
+                            </div>
+                            <div class="text_footer">  
+                                Tầng 5, tòa nhà Victoria, Nguyên Chánh, Trung Hòa, Cầu Giấy, Hà Nội
+                            </div>
+                        </div>
+
+                        <div class="row row_footer">
+                            <div class="icon_footer">
+                                <img src="img/old-typical-phone.png" alt="" class="icon_footer">
+                            </div>
+                            <div class="text_footer">  
+                                +8498 789 1827
+                            </div>
+                        </div>
+
+                        <div class="row row_footer">
+                            <div class="icon_footer">
+                                <img src="img/email.png" alt="" class="icon_footer">
+                            </div>
+                            <div class="text_footer">  
+                                admin@tachudu.com
+                            </div>
+                        </div>
+
+                        <div class="row row_footer">
+                            <div class="icon_footer">
+                                <img src="img/internet.png" alt="" class="icon_footer">
+                            </div>
+                            <div class="text_footer">  
+                                www.tachudu.com
+                            </div>
+                        </div>
+                    </div><!--End col-->
+
+                </div><!--End Row-->
+
+            </div>
+        </div> 
+
+
+        <!--Navagation Footer-->
+
+        
+        <div class="nav_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 copy_right">
+                        Copyright &#169 2018 TaChuDu. All rights reserved.<br>
+                        This design is own by TaChuDu
+                    </div>
+
+                    <ul class="link_nav_footer ml-auto">
+                        <li class="item_nav_list">
+                            <a href="#" class="item_nav_footer">Sản phẩm</a>
+                        </li>
+                        <li class="item_nav_list">
+                            <a href="#" class="item_nav_footer">Tuyển dụng</a>
+                        </li>
+                        <li class="item_nav_list">
+                            <a href="#" class="item_nav_footer">Liên hệ</a>
+                        </li>
+                        <li class="item_nav_list">
+                            <a href="#" class="item_nav_footer">giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!--End Footer-->
+    </div>
+</body>
+</html>
+
+<!--Validate form JavaScript/ Jquerry-->
+<!--The checkValidity() Method-->

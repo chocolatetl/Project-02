@@ -1,0 +1,406 @@
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+p {
+    margin: 1px;
+}
+
+/*-------------------------
+    Navigation Bar
+--------------------------*/
+
+.navbar {
+    width: 100%;
+    height: 110px;
+    background-color: rgba(163, 52, 57,0.4);
+}
+.nav_logo {
+    position: relative;
+}
+.nav_link_list li{
+    font-weight: bold;
+    list-style: none;
+    display: inline;
+}
+.nav_list_item {
+    color: #ffffff;
+    margin-left: 20px;
+}
+.nav_list_item:hover {
+    text-decoration: unset;
+    color: #f7941d;
+}
+
+/*-------------------------
+    Header
+------------------------- */
+
+header {
+    position: relative;
+}
+
+.main_nav {
+    width: 100%;
+    height: 120px;
+    background-color: #ff9f7b;
+    position: absolute;
+    opacity: 0.4 ;
+    z-index: 99;
+}
+.logo {
+    position: absolute;
+    z-index: 100;
+    margin-left: 50px;
+}
+.banner {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    background:no-repeat center center;
+    background-image: url(../img/Banner.png);
+}
+.path {
+    width: 100%;
+    height: 50px;
+    margin: unset;
+    border: unset;
+    border-radius: unset;
+    text-align: left;
+    color: #ffffff;
+    background: linear-gradient(to right, #ff9f7b, #ffc789);
+}
+.path_link {
+    margin-left: 90px; 
+}
+.path a{
+    color: #ffffff;
+}
+.path a:hover {
+    color:#ff0000;
+    text-decoration: unset;
+}
+
+/*-----------------------------
+            Body
+------------------------------*/
+
+.main_body {
+    margin-top:50px;
+}
+/*-----Thông tin hành khách-----*/
+.group {
+    margin-left: 5px;
+    margin-right: 70px;
+}
+.group:nth-child(3) {
+    margin-right: 90px;
+}
+.group:nth-child(4) {
+    margin-right: 90px;
+}
+.group_icon {
+    float: left;
+    margin-left: 30px;
+}
+.info_hanh_khach {
+    width: 98%;
+}
+.box_info {
+    width: 100%;
+    box-shadow: 2px 2px 5px -2px;
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+
+/*-------Thông tin thanh toán-----------*/
+#errorName {
+    color: #ff0000;
+    margin-right: 80px;
+    float: right;
+}
+#errorSothe {
+    color: #ff0000;
+    margin-right: 80px;
+    float: right;
+}
+#errorDate{
+    color: #ff0000;
+    float: left;
+}
+#errorCcg {
+    color: #ff0000;
+    float: left; 
+}
+#errorCode {
+    color: #ff0000;
+}
+
+.logo_visa {
+    width: 286px;
+    height: 180px;
+    float: right;
+    margin-right: 30px;
+    margin-top:15px;
+    background-image: url(../img/logo_visa.png);
+  
+}
+.info_payment {
+    width: 98%;
+}
+.box_payment{
+    box-shadow: 2px 2px 5px -2px;
+    padding:20px;
+    padding-top:unset;
+    padding-left: unset;
+}
+.btn_payment {
+    
+    background-color: #ffffff;
+}
+.form_payment {
+    border-radius: 5px;
+    padding: unset;
+    width: 410px;
+}
+.form_item {
+    margin: 15px;
+}
+.form_item_2{
+    margin: 15px;
+    margin-left: 35px;
+    margin-top:unset;
+}
+
+/*--------Terms and Conditions----------*/
+.terms_container {
+    width: 100%;
+    height: 650px;
+}
+.terms_conditions {
+    margin-top:40px;
+    width: 100%;
+    height: 500px;
+    box-shadow: 2px 2px 5px -2px;
+}
+.tc {
+    width: 97%;
+    height: 400px;
+    overflow: scroll;
+}
+.thanhtoan {
+    margin:20px;
+    padding-left: 20px;
+    margin-right: unset;
+    float: right;
+    color: #ffffff;
+    
+}
+
+/*---------------------col 3------------------------*/
+.duong_ke {
+    width: 275px;
+    margin-left: -10px;
+    margin-right: -15px;
+}
+
+.de_xuat_lu_lich {
+    width: 300px;
+    height: 135px;
+    background:linear-gradient(to right, #ff9277, #ffc488);
+}
+.giam_gia {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top:10px;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #00aeef;
+}
+.chi_tiet {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    background-color: #f7941d;
+    color: #ffffff;
+    margin-top:40px;
+    margin-left: 7px;
+}
+
+/*----------------Chuyến bay--------------------*/
+
+.title_chuyen_bay{
+    width: 100%;
+   margin-left: 5px; 
+}
+.logo_vnairline{
+    margin-left: 25px;
+}
+.han{
+    margin-left: 15px;
+}
+.flight{
+    margin-left:15px; 
+}
+.mo_ta {
+    width: 100%;
+    margin-top:15px;
+    padding-top:5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    background-color: #f7941d;
+}
+/*-----------------Tour đề xuất--------------------------*/
+
+.tour_select {
+    font-size: 16px;
+    margin-left: 5px;
+}
+.day_age {
+    font-size: 11px;
+}
+
+/*-------------------Tổng giá tour--------------------------*/
+.total_price {
+    width: 100%;
+    text-align: center;
+}
+.price {
+    color: #f7941d;
+}
+
+/*-----------------------Giá chi tiết------------------------*/
+.detail_price {
+    float: left;
+    margin-right: 25px;
+}
+.detail_price_M {
+    float: right;
+    text-align: right; 
+}
+.detail_price_M p {
+    color: #f7941d;
+}
+
+/*-----------------------Mã giảm giá--------------------------*/
+.code_giam_gia {
+    padding: 5px;
+    padding-right: 10px; 
+}
+.check_Tpoint {
+    margin-top: 15px; 
+}
+
+/*----------------------Lợi ích----------------------------*/
+.profit {
+    font-size: 15px;
+}
+
+/*---------------------Link hướng dẫn----------------------*/
+.guide_link {
+    font-size: 13px;
+    margin-left: 13px; 
+}
+
+/*------------------------------------------
+                Footer
+--------------------------------------------*/
+
+.footer {
+    width: 100%;
+    height: 485px;
+    background-color: #a33439;
+}
+.col_1 {
+    font-size: 13px;
+    color: #ffffff;
+}
+.logo_footer {
+    margin-top: 55px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.media_link {
+    margin-top:35px;
+}
+
+/*--------------------*/
+
+.title_col_footer {
+    margin-top:90px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.logo_hotel {
+    margin-left: 15px;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.detail_hotel {
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 14px;
+}
+/*----------------------*/
+.tag_footer {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 15px 4px;
+    border: 1px solid #ffffff;
+}
+.tag_footer:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #f7941d;
+}
+/*-------------------------*/
+.row_footer {
+    width: 300px;
+    font-size: 14px;
+    margin: unset;
+    padding:-15px;
+}
+.icon_footer {
+    margin: unset;
+    margin-bottom: 10px;
+}
+.text_footer{
+    width: 230px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+/*--------------------------*/
+.nav_footer {
+    width: 100%;
+    height: 60px;
+    font-size: 13px;
+    color: #ffffff;
+    background: #832226;
+}
+.copy_right {
+    padding: unset;
+    padding-top:10px;
+}
+.link_nav_footer {
+    padding-top:17px;
+}
+.item_nav_list{
+    display: inline;
+    list-style: none;
+}
+.item_nav_footer:hover {
+    text-decoration: unset;
+    color: #f7941d;
+}
+.item_nav_footer{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px;
+}
